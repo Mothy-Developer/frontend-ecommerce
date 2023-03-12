@@ -17,7 +17,7 @@ function Login() {
                     </div>
                     <div className="w-full my-6">
                         <input
-                            className="p-2 rounded-md border-none w-full"
+                            className="p-2 rounded-md border-none w-full text-black"
                             type="password"
                             placeholder="Password"
                             name="password"
