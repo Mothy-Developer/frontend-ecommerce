@@ -8,7 +8,7 @@ function Login() {
                     <h1 className="w-full text-4xl tracking-widest my-6">Login</h1>
                     <div className="w-full my-6">
                         <input
-                            className="p-2 rounded-md border-none w-full"
+                            className="p-2 rounded-md border-none w-full text-black"
                             type="text"
                             placeholder="Email"
                             name="email"
@@ -28,7 +28,7 @@ function Login() {
                         <button
                             type="submit"
                             className="p-2 rounded-md bg-gradient-to-tr from-yellow-500 to-yellow-600 text-white w-full"
-                        >
+                            >
                             Login
                         </button>
                     </div>
