@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import Navbar from "../Navbar";
 
 
-export default function LoginPage() {
+export default function RegisterPage() {
+
     const [formData, setFormData] = useState({
+        username: "",
         email: "",
         password: "",
     });
@@ -21,6 +23,13 @@ export default function LoginPage() {
         // TODO: add logic to handle form submission
     };
 
+    // let navigate = useNavigate();
+
+    // const routeChange = () => {
+    //     let path = "/detail_barang";
+    //     navigate(path);
+    // };
+
     return (
         <div className="flex flex-col h-screen">
             <Navbar/>
@@ -32,6 +41,24 @@ export default function LoginPage() {
                         </h2>
                     </div>
                     <form onSubmit={handleSubmit} className="mt-8">
+                        <div>
+                            <label
+                                htmlFor="username"
+                                className="block text-gray-700 font-medium mb-2"
+                            >
+                                Username
+                            </label>
+                            <input
+                                type="username"
+                                name="username"
+                                id="username"
+                                value={formData.username}
+                                onChange={handleChange}
+                                required
+                                className="appearance-none border border-gray-300 rounded-md py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow-outline w-full"
+                                placeholder="Username"
+                            />
+                        </div>
                         <div>
                             <label
                                 htmlFor="email"
@@ -69,20 +96,17 @@ export default function LoginPage() {
                             />
                         </div>
                         <div className="mt-6">
-                            <Link to="/home">
-                                <button
-                                    type="submit"
-                                    // onClick={handleClick}
-                                    className="py-2 px-4 bg-blue-500 hover:bg-blue-600 focus:outline-none focus:bg-blue-600 text-white rounded-md w-full"
-                                >
-                                    Masuk
-                                </button>
-                            </Link>
+                            <button
+                                type="submit"
+                                // onClick={routeChange}
+                                className="py-2 px-4 bg-blue-500 hover:bg-blue-600 focus:outline-none focus:bg-blue-600 text-white rounded-md w-full"
+                            >
+                                Masuk
+                            </button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-
-    );
+    )
 }

@@ -3,7 +3,7 @@ import React from "react";
 function DetailProduct() {
 
     return (
-        <div className="container mx-auto py-8 px-6">
+        <div className="container mx-auto py-8 px-6  ">
             <div className="flex flex-wrap -mx-4">
                 <div className="w-full md:w-1/2 px-4">
                     <img src="https://picsum.photos/1900/1800" alt="Product" className="w-full h-64 object-cover rounded-lg shadow-md" />
