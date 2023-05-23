@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../Banner";
+import Banner from "../item component/Banner";
 // import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
 import ItemCard from "../item component/ItemCard";

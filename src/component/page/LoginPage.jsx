@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import Navbar from "../Navbar";
+import Navbar from "../../component/item component/Navbar";
 
 
 export default function LoginPage() {
@@ -23,7 +23,7 @@ export default function LoginPage() {
 
     return (
         <div className="flex flex-col h-screen">
-            <Navbar/>
+            <Navbar />
             <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-md w-full bg-white shadow-md rounded-lg p-6">
                     <div className="text-center">

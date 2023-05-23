@@ -1,5 +1,5 @@
 import React from 'react';
-import dummyIcon from '../assets/react.svg';
+import dummyIcon from '../../assets/react.svg';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
